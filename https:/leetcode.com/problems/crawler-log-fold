@@ -1,0 +1,9 @@
+ new=[]
+        for i in range (len(logs)):
+            if new and logs[i]=="../":
+                new.pop()
+            elif logs[i]=="../":
+                new=[]
+            elif logs[i] !="./":
+                new.append(logs[i])
+        return(len(new))    
