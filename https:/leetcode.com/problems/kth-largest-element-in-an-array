@@ -1,0 +1,3 @@
+ nums.sort()
+        length= len(nums)-k
+        return nums[length]
