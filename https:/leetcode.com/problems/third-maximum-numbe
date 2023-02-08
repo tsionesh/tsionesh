@@ -1,0 +1,14 @@
+two=0
+        max_third=0
+        first_max = 0
+        list_nums= list(set(nums))
+        if len(list_nums) >=3:
+            first_max +=max(list_nums)
+            list_nums.remove(first_max)
+            two +=max(list_nums)
+            list_nums.remove(two)
+            max_third +=max(list_nums)
+            return max_third
+        elif  len(list_nums)<= 2:
+            return max(list_nums)
+            
