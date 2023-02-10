@@ -1,0 +1,6 @@
+ans=[]
+        for i in range (len(nums)):
+            ans.append(nums[i]*nums[i])
+        ans.sort()
+
+        return ans
