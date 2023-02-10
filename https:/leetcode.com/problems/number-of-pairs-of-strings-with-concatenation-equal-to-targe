@@ -1,0 +1,7 @@
+ for i in range(len(nums)): 
+            new=[]          
+            new=nums[:i]+nums[i+1:]
+            for j in new:
+                if nums[i]+j==target:
+                    count+=1
+        return count    
