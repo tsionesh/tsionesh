@@ -1,0 +1,8 @@
+new = [chr(x) for x in range(ord('A'), ord('Z')+1)]
+        ans = []
+        while columnNumber > 0:
+            ans.append(new[(columnNumber-1)%26])
+            columnNumber = (columnNumber-1) // 26
+        ans.reverse()
+        return ''.join(ans)
+       
