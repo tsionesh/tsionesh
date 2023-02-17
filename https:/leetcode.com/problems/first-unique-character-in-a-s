@@ -1,0 +1,21 @@
+ new=list(set(s))
+        temp=[]
+        mini=-1
+        j=0
+        ans=[]
+        while j <len(new):
+            if s.count(new[j])== 1:
+                result = s.index(new[j])
+                temp.append(result)
+            j+=1
+            if len(temp)== 0:
+                ans=-1
+            elif len(temp)==1:
+                ans = result
+            elif len(s)==1:
+                ans = 0
+            else:
+                ans =min(temp)
+        return ans
+
+    
