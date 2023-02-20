@@ -1,0 +1,9 @@
+ total=-1
+        
+        for i in range (len(nums)-1):
+            new=nums[i+1:]
+            for j in new:
+                if nums[i] <j:
+                    res= j-nums[i]
+                    total=max(res,total)
+        return total
