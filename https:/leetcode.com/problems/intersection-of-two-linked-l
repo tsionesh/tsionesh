@@ -1,0 +1,26 @@
+ countA = 0
+        currA = headA
+        while currA:
+            countA += 1
+            currA=currA.next
+        countB=0
+        currB = headB
+        while currB:
+            countB += 1
+            currB = currB.next
+        difff= abs(countA - countB)
+        startA = headA
+        startB = headB
+        if countA > countB:
+            for j in range(difff):
+                startA=startA.next
+        else:
+            for j in range(difff):
+                startB= startB.next
+        while startA and startB:
+            if startA == startB:
+                return startA
+            startA = startA.next
+            startB = startB.next   
+        return None
+
