@@ -1,0 +1,17 @@
+ curr =tickets[k]
+        count=0
+        for i in range (len(tickets)):
+            new=tickets[i]-tickets[k]
+            if k >=i:
+                if new>= 0:
+                    count+= curr
+                else: 
+                    count+= tickets[i]
+            if k<i:
+                if new >=0:
+                    count+=curr-1
+
+                else:
+                    count+=tickets[i]
+        return count
+        
